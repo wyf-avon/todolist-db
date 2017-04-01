@@ -1,0 +1,32 @@
+{
+  "name": "todolist-db",
+  "version": "1.0.0",
+  "description": "based on koa2.0 + monogodb",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --harmony app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wyf-avon/todolist-db.git"
+  },
+  "author": "wangyafang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wyf-avon/todolist-db/issues"
+  },
+  "homepage": "https://github.com/wyf-avon/todolist-db#readme",
+  "dependencies": {
+    "co": "^4.6.0",
+    "koa": "^2.0.0-alpha.8",
+    "koa-router": "^5.4.1",
+    "mongoose": "^4.9.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-register": "^6.24.0"
+  }
+}
