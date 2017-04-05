@@ -1,3 +1,14 @@
-require("babel-register");
-require("babel-polyfill"); //引入这个文件babel-polyfill很重要，否则出现错误
-require("./hello.js");
+import Koa from 'koa';
+import bodyParser from 'koa-bodyparser';
+import logger from 'koa-logger';
+
+import routes from './routes/index';
+
+const app = new Koa();
+
+app.use(logger())
+   .use(parser())
+   .use(routes.routes())
+   .use(router.allowedMethods());
+
+app.listen(3000);
